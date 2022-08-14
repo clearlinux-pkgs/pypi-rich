@@ -4,7 +4,7 @@
 #
 Name     : pypi-rich
 Version  : 12.5.1
-Release  : 69
+Release  : 70
 URL      : https://files.pythonhosted.org/packages/bb/2d/c902484141330ded63c6c40d66a9725f8da5e818770f67241cf429eef825/rich-12.5.1.tar.gz
 Source0  : https://files.pythonhosted.org/packages/bb/2d/c902484141330ded63c6c40d66a9725f8da5e818770f67241cf429eef825/rich-12.5.1.tar.gz
 Summary  : Render rich text, tables, progress bars, syntax highlighting, markdown and more to the terminal
