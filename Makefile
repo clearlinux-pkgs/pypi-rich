@@ -1,5 +1,5 @@
 PKG_NAME := pypi-rich
-URL = https://files.pythonhosted.org/packages/9e/5e/c3dc3ea32e2c14bfe46e48de954dd175bff76bcc549dd300acb9689521ae/rich-13.2.0.tar.gz
+URL = https://files.pythonhosted.org/packages/96/29/395e31686066cee66f8c0809d98b5e68d0f0c9b67e80f956b5659c8113fb/rich-13.3.0.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
