@@ -4,10 +4,10 @@
 # Using build pattern: pyproject
 #
 Name     : pypi-rich
-Version  : 13.3.5
-Release  : 85
-URL      : https://files.pythonhosted.org/packages/3d/0b/8dd34d20929c4b5e474db2e64426175469c2b7fea5ba71c6d4b3397a9729/rich-13.3.5.tar.gz
-Source0  : https://files.pythonhosted.org/packages/3d/0b/8dd34d20929c4b5e474db2e64426175469c2b7fea5ba71c6d4b3397a9729/rich-13.3.5.tar.gz
+Version  : 13.4.1
+Release  : 86
+URL      : https://files.pythonhosted.org/packages/02/97/0046b5e3c6a5057b5817e5e6c51a776d410b953e6a9c67ae249dafdd2999/rich-13.4.1.tar.gz
+Source0  : https://files.pythonhosted.org/packages/02/97/0046b5e3c6a5057b5817e5e6c51a776d410b953e6a9c67ae249dafdd2999/rich-13.4.1.tar.gz
 Summary  : Render rich text, tables, progress bars, syntax highlighting, markdown and more to the terminal
 Group    : Development/Tools
 License  : MIT
@@ -15,7 +15,7 @@ Requires: pypi-rich-license = %{version}-%{release}
 Requires: pypi-rich-python = %{version}-%{release}
 Requires: pypi-rich-python3 = %{version}-%{release}
 BuildRequires : buildreq-distutils3
-BuildRequires : pypi(poetry)
+BuildRequires : pypi(poetry_core)
 # Suppress stripping binaries
 %define __strip /bin/true
 %define debug_package %{nil}
@@ -53,10 +53,10 @@ python3 components for the pypi-rich package.
 
 
 %prep
-%setup -q -n rich-13.3.5
-cd %{_builddir}/rich-13.3.5
+%setup -q -n rich-13.4.1
+cd %{_builddir}/rich-13.4.1
 pushd ..
-cp -a rich-13.3.5 buildavx2
+cp -a rich-13.4.1 buildavx2
 popd
 
 %build
@@ -64,7 +64,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1682974726
+export SOURCE_DATE_EPOCH=1685638048
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
