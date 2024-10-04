@@ -6,10 +6,10 @@
 # autospec commit: f35655a
 #
 Name     : pypi-rich
-Version  : 13.9.1
-Release  : 99
-URL      : https://files.pythonhosted.org/packages/b3/78/87d00a1df7c457ad9aa0139f01b8a11c67209f27f927c503b0109bf2ed6c/rich-13.9.1.tar.gz
-Source0  : https://files.pythonhosted.org/packages/b3/78/87d00a1df7c457ad9aa0139f01b8a11c67209f27f927c503b0109bf2ed6c/rich-13.9.1.tar.gz
+Version  : 13.9.2
+Release  : 100
+URL      : https://files.pythonhosted.org/packages/aa/9e/1784d15b057b0075e5136445aaea92d23955aad2c93eaede673718a40d95/rich-13.9.2.tar.gz
+Source0  : https://files.pythonhosted.org/packages/aa/9e/1784d15b057b0075e5136445aaea92d23955aad2c93eaede673718a40d95/rich-13.9.2.tar.gz
 Summary  : Render rich text, tables, progress bars, syntax highlighting, markdown and more to the terminal
 Group    : Development/Tools
 License  : MIT
@@ -55,10 +55,10 @@ python3 components for the pypi-rich package.
 
 
 %prep
-%setup -q -n rich-13.9.1
-cd %{_builddir}/rich-13.9.1
+%setup -q -n rich-13.9.2
+cd %{_builddir}/rich-13.9.2
 pushd ..
-cp -a rich-13.9.1 buildavx2
+cp -a rich-13.9.2 buildavx2
 popd
 
 %build
@@ -66,7 +66,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1727790415
+export SOURCE_DATE_EPOCH=1728051418
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
